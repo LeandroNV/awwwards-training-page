@@ -66,8 +66,7 @@ export const HeroSection = () => {
 					<div className='overflow-hidden'>
 						<h1 className='hero-title'>Malditamente Delicioso</h1>
 					</div>
-					{/* Técnica de reveal con GSAP: clipPath inicial colapsado (50% 0, 50% 100%, 50% 100%)
-				    que se anima hacia polygon(0% 0, 100% 0, 100% 100%) para revelar el contenido */}
+					{/* Técnica de reveal con GSAP: clipPath inicial colapsado (50% 0, 50% 100%, 50% 100%) que se anima hacia polygon(0% 0, 100% 0, 100% 100%) para revelar el contenido */}
 					<div
 						style={{ clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)' }}
 						className='hero-text-scroll'

@@ -5,17 +5,17 @@ import { SplitText } from 'gsap/all';
 export const MessageSection = () => {
 	useGSAP(() => {
 		const firstMsgSplit = SplitText.create('.first-message', {
-			type: 'words',
+			type: 'chars',
 		});
 		const secondMsgSplit = SplitText.create('.second-message', {
-			type: 'words',
+			type: 'chars',
 		});
 		const paragraphMsgSplit = SplitText.create('.msg-description', {
 			type: 'words, line',
 			lineClass: 'paragraph-line',
 		});
 
-		gsap.to(firstMsgSplit.words, {
+		gsap.to(firstMsgSplit.chars, {
 			color: '#faedae',
 			ease: 'power1.in',
 			stagger: 1,
@@ -27,7 +27,7 @@ export const MessageSection = () => {
 			},
 		});
 
-		gsap.to(secondMsgSplit.words, {
+		gsap.to(secondMsgSplit.chars, {
 			color: '#faedae',
 			ease: 'power1.in',
 			stagger: 1,
@@ -55,7 +55,6 @@ export const MessageSection = () => {
 			scrollTrigger: {
 				trigger: '.msg-description',
 				start: 'top center',
-				markers: true,
 			},
 		});
 
