@@ -34,7 +34,7 @@ export const HeroSection = () => {
 					stagger: 0.03,
 					ease: 'power2.out',
 				},
-				'-=0.5'
+				'-=0.9'
 			);
 
 		const heroTl = gsap.timeline({
