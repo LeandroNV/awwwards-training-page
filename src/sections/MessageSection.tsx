@@ -34,8 +34,9 @@ export const MessageSection = () => {
 			scrollTrigger: {
 				trigger: '.message-content',
 				start: '40% center',
-				end: '70% center',
+				end: '60% center',
 				scrub: true,
+				// markers: true,
 			},
 		});
 
@@ -53,8 +54,9 @@ export const MessageSection = () => {
 
 		const paragraphTl = gsap.timeline({
 			scrollTrigger: {
-				trigger: '.msg-description',
-				start: 'top center',
+				trigger: '.second-message',
+				start: '20% center',
+				// markers: true,
 			},
 		});
 

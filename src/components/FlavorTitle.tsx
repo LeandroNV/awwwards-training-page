@@ -28,7 +28,18 @@ export const FlavorTitle = () => {
 			ease: 'circ.inOut',
 			scrollTrigger: {
 				trigger: '.flavor-section',
-				start: 'top 40%',
+				start: '10% center',
+				// markers: true,
+			},
+		});
+
+		gsap.from(secondTextSplit.chars, {
+			yPercent: 200,
+			stagger: 0.02,
+			ease: 'power1.inOut',
+			scrollTrigger: {
+				trigger: '.flavor-section',
+				start: '20% center',
 				markers: true,
 			},
 		});

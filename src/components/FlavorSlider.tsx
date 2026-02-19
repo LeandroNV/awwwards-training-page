@@ -1,3 +1,7 @@
 export const FlavorSlider = () => {
-	return <div>FlavorSlider</div>;
+	return (
+		<div>
+			<div className='flavors'>{}</div>
+		</div>
+	);
 };
